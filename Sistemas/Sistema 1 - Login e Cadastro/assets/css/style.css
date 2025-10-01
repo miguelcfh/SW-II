@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('../img/witcher-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p::selection, h1::selection, strong::selection {
+    background-color: none;
+}
+
+.content {
+    background-color: hsla(0, 0%, 100%, 0.081);
+    box-shadow: 0px 0px 10px hsla(0, 89%, 44%, 0.601);
+    border: 2px solid hsl(0, 3%, 87%);
+    padding: 20px;
+    color: hsl(0, 3%, 87%);
+    text-align: center;
+}
+
+.content h1{
+    color: hsl(0, 0%, 100%);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: hsla(0, 0%, 0%, 0.644);
+}
+
+.content a {
+    text-decoration: none;
+    color: hsl(0, 3%, 87%);
+}
+
+.content a:hover {
+    text-decoration: none;
+    color: hsla(118, 89%, 52%, 0.765);
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid hsl(0, 3%, 87%);
+    border-radius: 10px;
+    background-color: hsla(0, 89%, 48%, 0.081);
+    margin: 10px;
+    padding: 6px;
+}
+
+.input-box input {
+    background: transparent;
+    border: none;
+    color: hsl(0, 53%, 93%);
+    outline: none;
+    font-size: 16px;
+}
+
+#submit {
+    font-size: 16px;
+    color: hsl(0, 0%, 0%);
+    background-color: hsla(0, 89%, 52%, 0.765);
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    padding: 4px 6px;
+
+    transition: ease 0.2s;
+}
+
+#submit:hover {
+    background-color: hsla(118, 89%, 52%, 0.765);
+}
+
+.video {
+    text-align: center;
+    padding: 20px;
+    color: hsl(0, 0%, 100%);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: hsla(0, 0%, 0%, 0.644);
+}
+
+@media screen and (max-width:600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+    }
+}

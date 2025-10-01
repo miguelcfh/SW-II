@@ -1,0 +1,1 @@
+# Sistema de Login feito em PHP, com hashing de senhas e inserção ao banco de dados.
